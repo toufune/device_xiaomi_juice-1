@@ -9,6 +9,7 @@ $(call inherit-product, device/xiaomi/juice/device.mk)
 # Inherit some common PalladiumOS stuff.
 $(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+PALLADIUM_BUILD_VARIANT := GAPPS
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := palladium_juice
