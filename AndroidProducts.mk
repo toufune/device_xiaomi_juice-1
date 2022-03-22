@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_juice.mk
+    $(LOCAL_DIR)/palladium_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_juice-user \
-    aosp_juice-userdebug \
-    aosp_juice-eng
+    palladium_juice-user \
+    palladium_juice-userdebug \
+    palladium_juice-eng
