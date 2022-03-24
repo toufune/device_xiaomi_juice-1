@@ -6,17 +6,15 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common PixelPlus-UI stuff.
+# Inherit some common PixelBlaster-OS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-IS_PHONE := true
-CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-PPUI_MAINTAINER := Lynx
+TARGET_GAPPS_ARCH := arm64
+BUILD_GAPPS := Gapps
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
